@@ -1,0 +1,90 @@
+footer{
+    background: $footerBG;
+    padding: 7rem 0;
+    @include respond(maxWidth992) {
+          padding: 5rem 0;
+        }
+
+        @include respond(maxWidth768) {
+          padding: 3rem 0;
+        }
+    position: relative;
+    &::before{
+        content: "";
+        background-image: url(../images/bg-02.jpg);
+        mix-blend-mode: color-burn;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 1;
+    }
+    .container{
+        position: relative;
+        h2{
+            color: rgba($footerText, $alpha: 1);
+        }
+        p, a, i{
+            color: $footerText;
+        }
+        .in-person{
+    border: 2px solid rgba($footerText, $alpha: 1);
+    border-radius: 0.9rem;
+    box-shadow: $boxShadowOne;
+    transition: $transition;
+    margin-top: 4rem;
+    @media screen and (min-width:1400px) {
+        height: 218px;
+    }
+    @media screen and (min-width:768px) and (max-width:991.9px) {
+          height: 315px;
+        }
+    @media screen and (min-width:992px) and (max-width:1199.9px) {
+          height: 278px;
+        }
+
+        @media screen and (min-width:1200px) and (max-width:1399.9px) {
+          height:  248px;
+        }
+    
+    h4{
+      background: rgba(rgba($footerText, $alpha: 1), $alpha: 1);
+      text-align: center;
+      color: $footerBG;
+      padding: 1rem;
+      border-radius: 0.7rem 0.7rem 0 0;
+      margin-bottom: 0;
+    }
+    .content-para{
+      padding: 2rem 1rem;
+      text-align: left;
+      color: rgba($footerText, $alpha: 1);
+      
+    }
+  }
+  .venue{
+    margin-top: 3rem;
+    h4{
+        display: inline-block;
+        border-bottom: 2px solid rgba($footerText, $alpha: 1);
+        padding: 4px 15px;
+        color: rgba($footerText, $alpha: 1);
+    }
+  }
+  .get-in{
+    @include respond (maxWidth768){
+      text-align: center;
+    }
+  }
+    }
+}
+.mid{
+      @include respond (maxWidth768){
+        text-align: center;
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+      }
+    }

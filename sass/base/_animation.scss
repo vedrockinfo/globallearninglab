@@ -1,0 +1,27 @@
+@keyframes ripple {
+    0% {
+    transform: scale(1);
+    }
+    75% {
+        transform: scale(1.75);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    }
+
+    @keyframes spin {
+  0% { transform:  translate(-50%, -50%) rotate(0deg); }
+  100% { transform:  translate(-50%, -50%) rotate(360deg); }
+}
+
+@keyframes bounce {
+		0% {
+			transform: scale(1);
+		}
+		100% {
+			transform: scale(1.1);
+		}
+	}

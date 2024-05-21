@@ -1,0 +1,12 @@
+.global-btn-one{
+    @include GlobalButtonOne();
+}
+.global-btn-two{
+    @include GlobalButtonTwo();
+}
+.global-btn-three{
+    @include GlobalButtonThree();
+}
+.footer-btn{
+    @include FooterButton();
+}
